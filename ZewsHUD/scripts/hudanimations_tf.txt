@@ -204,8 +204,8 @@ event KeyHintMessageHide
 //Health Bonus Pulse
 event HudHealthBonusPulse
 {
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"				Linear 0.0 0.2
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"					Linear 0.2 0.4
+	Animate	PlayerStatusHealthImage 		Alpha		"255"				Linear 0.0 0.2
+	Animate	PlayerStatusHealthImage 		Alpha		"0"					Linear 0.2 0.4
 	Animate PlayerStatusHealthValue			fgcolor		"ItemRarityCommon"	Linear 0.0 0.0
 	Animate PlayerStatusHealthValueShadow	fgcolor		"ItemRarityCommon_GreyedOut"	Linear 0.0 0.0
 
@@ -232,8 +232,8 @@ event HudHealthBonusPulseStop
 //Health Dying Pulse
 event HudHealthDyingPulse
 {
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
+	Animate	PlayerStatusHealthImage 		Alpha		"200"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthImage 		Alpha		"0"			Linear 0.125 0.075
 	Animate PlayerStatusHealthValue			fgcolor		"QualityColorCollectors"	Linear 0.0 0.0
 	Animate PlayerStatusHealthValueShadow	fgcolor		"ItemRarityAncient_GreyedOut"		Linear 0.0 0.0
 	
@@ -445,12 +445,18 @@ event HudTournamentSetupPanelClose
 
 event HudMedicCharged
 {
-	Animate	ChargeLabel 	FgColor		"TanLight"		Linear 0.0 0.1
-	Animate	ChargeLabel 	FgColor		"TanDarker"		Linear 0.3 0.4
+	Animate	ChargeLabel 	FgColor		"QualityColorDeveloper"		Linear 0.0 0.1
+	Animate	ChargeLabel 	FgColor		"QualityColorCompleted"		Linear 0.3 0.4
 	
-	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.1
-	Animate	ChargeMeter 	FgColor		"TanDarker"		Linear 0.3 0.4
-
+	Animate	ChargeLabelShadow 	FgColor		"QualityColorDeveloper_GreyedOut"		Linear 0.0 0.1
+	Animate	ChargeLabelShadow 	FgColor		"QualityColorCompleted_GreyedOut"		Linear 0.3 0.4
+	
+	Animate	ChargeMeter 	FgColor		"QualityColorDeveloper"		Linear 0.0 0.1
+	Animate	ChargeMeter 	FgColor		"QualityColorCompleted"		Linear 0.3 0.4
+	
+	Animate	ChargeMeterShadow 	FgColor		"QualityColorDeveloper_GreyedOut"		Linear 0.0 0.1
+	Animate	ChargeMeterShadow 	FgColor		"QualityColorCompleted_GreyedOut"		Linear 0.3 0.4
+	
 	RunEvent HudMedicChargedLoop	0.6
 }
 
@@ -465,8 +471,9 @@ event HudMedicChargedStop
 	StopEvent HudMedicCharged 0.0
 	StopEvent HudMedicChargedLoop 0.0
 	
-	Animate	ChargeLabel 	FgColor		"TanLight"		Linear 0.0 0.0001
-	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.0001
+	Animate	ChargeLabel 	FgColor		"TanDark"		Linear 0.0 0.0001
+	Animate	ChargeLabelShadow 	FgColor		"Black"		Linear 0.0 0.0001
+	Animate	ChargeMeter 	FgColor		"QualityColorCompleted"		Linear 0.0 0.0001
 }
 
 //====================================

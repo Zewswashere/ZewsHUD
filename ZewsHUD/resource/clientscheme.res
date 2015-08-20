@@ -2660,6 +2660,15 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		Karla48
+		{
+			"1"
+			{
+				"name"		"Karla Bold"
+				"tall"		"48"
+				"antialias" "1"
+			}
+		}
 		KarlaItalic12
 		{
 			"1"
