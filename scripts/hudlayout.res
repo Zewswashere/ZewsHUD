@@ -835,7 +835,6 @@
 	{
 
 	}	
-	
 	HudHDRDemo
 	{
 
@@ -846,9 +845,9 @@
 		"fieldName"				"WinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-150"
-		"ypos"					"215"
-		"wide"					"300"
+		"xpos"					"c-205"
+		"ypos"					"330"
+		"wide"					"400"
 		"tall"					"300"
 	}
 
