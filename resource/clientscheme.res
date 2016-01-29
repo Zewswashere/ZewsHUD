@@ -2768,6 +2768,15 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		MixolydianTitlingEl-It06
+		{
+			"1"
+			{
+				"name"		"MixolydianTitlingEl-Italic"
+				"tall"		"6"
+				"antialias" "1"
+			}
+		}
 		MixolydianTitlingEl-It08
 		{
 			"1"
@@ -2801,6 +2810,33 @@ Scheme
 			{
 				"name"		"MixolydianTitlingEl-Italic"
 				"tall"		"18"
+				"antialias" "1"
+			}
+		}
+		MixolydianTitlingLt10
+		{
+			"1"
+			{
+				"name"		"MixolydianTitlingLt-Regular"
+				"tall"		"10"
+				"antialias" "1"
+			}
+		}
+		MixolydianTitlingLt12
+		{
+			"1"
+			{
+				"name"		"MixolydianTitlingLt-Regular"
+				"tall"		"12"
+				"antialias" "1"
+			}
+		}
+		MixolydianTitlingLt14
+		{
+			"1"
+			{
+				"name"		"MixolydianTitlingLt-Regular"
+				"tall"		"14"
 				"antialias" "1"
 			}
 		}
