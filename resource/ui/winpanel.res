@@ -585,7 +585,7 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"Player3Medal"
 		"xpos"			"70"
-		"ypos"			"125"
+		"ypos"			"115"
 		"zpos"			"3"
 		"wide"			"20"
 		"tall"			"20"
